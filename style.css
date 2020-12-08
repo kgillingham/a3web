@@ -1,0 +1,321 @@
+/* CSS for template heavily modified from W3Schools Stylesheet: https://www.w3schools.com/w3css/4/w3.css */
+/* edits made by Kazuto Nov 21, 22, 23 */
+/*  edits made by Mark Nov 24, cleaning up unused classes */
+
+/* Owner: Kate */
+body {
+    margin:0;
+}
+
+body, h2, h4 {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color:#000;
+    font-family: Arial, sans-serif;
+    font-size:3vw;
+}
+
+p {
+    text-align:justify;
+    padding:12px;
+}
+
+.headertext {
+    color:#fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Navigation Bar structure */
+.top {
+    position:fixed;  /* this keeps the nav bar fixed to the top when scrolling */
+    width:100%;
+    z-index:1;
+    top:0;
+}
+
+.bar {
+    width:100%;
+    overflow:hidden;
+    display:block;
+    padding:8px 16px;
+    float:left;
+    border:none;
+    outline:0;
+}
+
+.white {
+    color:#000;
+    background-color:#fff;
+}
+
+.card {
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); /* this puts the shadow around the nav bar box */
+}
+
+.left-align {
+    text-align:left;
+}
+
+.large {
+    font-size:18px;
+}
+
+.right {
+    float:right;
+}
+
+.left {
+    float:left;
+}
+
+.padding-large {
+    padding:12px 24px;
+}
+
+.hover-blue:hover {
+    color:#fff;
+    background-color:#85a8c7;
+}
+
+.hover-white:hover {
+    color:#000;
+    background-color:#fff;
+}
+
+.button {
+    border:none;
+    display:block;
+    padding:8px 16px;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
+.bar-item {
+    padding:8px 16px;
+    float:left;
+    border:none;
+    display:block;
+    outline:0;
+    width:auto;
+}
+/* End of Owner: Kate */
+
+/* Owner: Kazuto */
+.burger {
+    padding:8px 16px;
+    float:left;
+    border:none;
+    display:block;
+    outline:0;
+    width:auto;
+}
+
+.burger-item {
+    border:none;
+    display:block;
+    padding:8px 16px;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:left;
+    cursor:pointer;
+    white-space:nowrap;
+}
+/* End Owner: Kazuto */
+
+/* Hide based on screen size (responsive design) */
+
+/* Owner: Kate */
+.hide {
+    display:none;
+}
+/* End Owner: Kate */
+
+/* Owner: Kazuto 
+this class has the same attributes as .hide, but a separate one is needed in order to be able to select 
+just the elements that relate to the email dropdown */
+.emailBox {
+    display:none;
+}
+/* End Owner: Kazuto */
+
+/* Owner: Kate */
+.show {
+    display:block;
+}
+
+@media (min-width:993px) {
+    /* any element that has this class will not be visible if the width is less than 993 pixels */
+    .hide-large{
+        display:none;
+    }
+}
+
+@media (max-width:992px) and (min-width:720px){
+    /* any element that has this class will not be visible if the width outside of 720-992 pixels */
+    .hide-medium{
+        display:none;
+    }
+}
+
+@media (max-width:720px) {
+    /* any element that has this class will not be visible if the width is greater than 720 pixels */
+    .hide-small {
+        display:none;
+    }
+}
+
+/* End of Owner: Kate */
+
+/* Kazuto ownership */
+@media (min-width:993px){
+    .content-large {
+        margin: auto;
+        width: 50%;
+    }
+    .bioimage {
+        float: left;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width:993px){
+    /*   Mark edit formatting for small screens Dec 1 2020*/
+    .content-mobile {
+        margin: auto;
+        width: 100%;
+    }
+    /* end Mark */
+}
+/* End Kazuto ownership */
+
+/* Header and grids */
+
+/* Owner: Kate */
+.container {
+    padding:0.01em 16px;
+}
+
+.padding-62-16 {
+    padding:62px 16px
+}
+
+.center {
+    text-align:center;
+}
+
+.margin {
+    margin:16px;
+}
+
+.xlarge {
+    font-size:24px;
+}
+
+.bar-block {
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+}
+
+.display-middle {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.light-grey {
+    color:#000;
+    background-color:#f1f1f1;
+}
+/* End of Owner: Kate */
+
+/* owner: Kazuto */
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex {
+    display:flex;
+    flex-direction:row;
+}
+
+.thirdWidth {
+    width: 33.33%;
+}
+
+.halfWidth {
+    width: 50%;
+}
+/* end Kazuto */
+
+/* Owner: Mark */
+.flex-people {
+    display:flex;
+    flex-direction:column;
+}
+
+.biotext {
+    margin: 5px;
+}
+
+.bioblock {
+    margin: 30px 10px;
+}
+/* End Owner: Mark */
+
+/* Mark edit formatting for Projects Page Dec 5 2020 */
+.anchor {
+    padding-top: 50px;
+}
+
+.padding-bottom {
+    padding-bottom: 50px;
+}
+/* End owner Mark */
+
+/* owner: kate */
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+/* end owner: Kate */
+
+/* Owner: Kazuto */
+.dropContact {
+    border-radius:12px;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropContact:hover, .dropContact.focus {
+    background-color:#cfcfcf;
+}
+
+.emailBox {
+    padding:16px;
+}
+/* End of Owner: Kazuto */
+
+/* Owner: Kate */
+.project-image {
+    display:block;
+    border:1px solid #000;
+}
+/* End Owner: Kate */

@@ -1,0 +1,124 @@
+<!-- Html for template by Kate - Template modified from: https://www.w3schools.com/w3css/tryw3css_templates_start_page.htm --> 
+<!-- edits made by Kazuto Nov 21, 22, 23 -->
+<!-- edits made by Mark Nov 24, cleaning up unused classes -->
+
+<!-- Template header inspired by: http://triton-env.com/-->
+
+<!-- Owner: Kate -->
+<!-- Sets the language, viewport size, links to the stylesheets and javascript page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cloud9 Consulting</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src='main.js'></script>
+</head>
+
+<body>
+  <!-- Navbar for large and medium screens --> <!-- navbar fixed to top of view when scrolling inspired by: https://www.limgeomatics.com/consulting/-->
+  <div class="top">
+    <div class="bar card left-align large white">
+      <!-- when the "burger" button is clicked a dropdown menu will appear. this button is only visible when the screen is smaller than a certain size -->
+      <a class="burger button hide-medium hide-large right padding-large hover-blue large white"  onclick="dropMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="bar-item button padding-large hover-white">Home</a>
+      <a href="people.html" class="bar-item button hide-small padding-large hover-white">People</a>
+      <a href="projects.html" class="bar-item button hide-small padding-large hover-white">Projects</a>
+    </div>
+    <!-- modified by Kazuto -->
+    <!-- dropdown menu toggled by burger on small screens -->
+    <div class='left'>
+      <div id="SmallNavBar" class="bar-block light-grey hide hide-large hide-medium large">
+        <a href="people.html" class="show burger-item button padding-large">People</a>
+        <a href="projects.html" class="show button burger-item padding-large">Projects</a>
+      </div>
+    </div>
+    <!-- end of Kazuto edit-->
+  </div>
+  <!-- End of Owner: Kate -->
+
+  <!-- Owner: Kate -->
+  <!-- Header title, image and accompanying text -->
+  <header class="container center padding-62-16">
+    <img class="image" src="images/Cloud9Consulting4.jpg" alt="Cloud 9 Consulting" width="1500" height="523">
+    <!-- End of Owner: Kate -->
+    <!-- Owner: Kazuto -->
+    <div class="display-middle">
+      <h1 class="headertext margin">Cloud 9 Consulting</h1>
+      <p class="hide-medium hide-small center xlarge">GIS Solutions</p>
+    </div>
+  </header>
+  <!-- End of Owner: Kazuto -->
+
+  <!-- Owner: Kate -->
+  <!-- container with text -->
+  <div class="container">
+    <div class="content-large center">
+      <div>
+        <h2>Welcome</h2>
+        <p>Cloud 9 Consulting is a GIS consulting company based in Ontario. We provide consulting services to 
+          private industry and the public service sector. Formed in 2020, Cloud 9 Consulting was born out of a desire to pass GEOM 
+          101 Web Design and Programming. Our three founders have extensive backgrounds in the fields of geology and biology, 
+          and bring this expertise to each consulting project. We have a range of specialties including Remote Sensing and Image Analysis,
+          Spatial Analysis, and Cartographic Solutions. For our full range of services and examples of past projects please visit our
+          projects page.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End of Owner: Kate -->
+
+  <!-- Owner: Kate -->
+  <!-- rollover project/service photo section inspired by: https://www.cerg.ca/ -->
+  <!-- creates a container with a title and line of text -->
+  <div class="container light-grey center">
+    <div class="content-large center">
+      <div>
+        <h2>How can we help?</h2>
+        <p class="center">Our team of experts are here to help with all of your GIS needs.</p>
+      </div>
+  <!-- image is linked to Geovisualization section on projects page, image changes when cursor goes over the image and changes back when cursor is outside of image -->
+      <div>
+        <div class="padding-large">
+          <a href="projects.html#geovis">
+            <img id="image1" src="images/cartography_400_237.jpg" onmouseover="newImage1()" onmouseout="originalImage1()" alt="Cartographic solutions" class="responsive">
+          </a>
+        </div>
+      </div>
+  <!-- image is linked to Surveying section on projects page, image changes when cursor goes over the image and changes back when cursor is outside of image -->
+      <div>
+        <div class="padding-large">
+          <a href="projects.html#survey">
+            <img id="image2" src="images/surveyplan_400_252.jpg" onmouseover="newImage2()" onmouseout="originalImage2()" alt="Autocad Mapping" class="responsive">
+          </a>
+        </div>
+      </div>
+  <!-- image is linked to Databases section on projects page, image changes when cursor goes over the image and changes back when cursor is outside of image -->    
+      <div>
+        <div class="padding-large">
+          <a href="projects.html#database">
+            <img id="image3" src="images/databasedesign_400_207.jpg" onmouseover="newImage3()" onmouseout="originalImage3()" alt="Geodatabase Design" class="responsive">
+          </a>
+        </div>
+      </div>
+      <p class="center">Visit our projects page for more services.</p>
+    </div>
+  </div>
+
+  <!-- container with text at bottom stating company name -->
+  <div class="container light-grey center">
+    <p class="margin center">Cloud 9 Consulting</p>
+  </div>
+
+  <!-- container with Footer -->
+  <footer class="container center">  
+    <div class="anchor"></div>
+    <p class="center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+</body>
+</html>
+
+<!-- End of Owner: Kate -->

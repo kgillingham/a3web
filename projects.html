@@ -1,0 +1,331 @@
+<!-- Page created by Kazuto Nov 21 -->
+<!-- edits made by Mark Nov 24, cleaning up unused classes -->
+
+<!-- Owner: Kazuto -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src='main.js'></script>
+</head>
+<!-- End of Owner: Kazuto -->
+
+<!-- Owner: Kate -->
+<body>
+  <!-- Navbar --> <!-- navbar fixed to top of view when scrolling inspired by: https://www.limgeomatics.com/consulting/ -->
+  <div class="top">
+    <div class="bar card left-align large white">
+      <!-- when the "burger" button is clicked a dropdown menu will appear. this button is only visible when the screen is smaller than a certain size -->
+      <a class="burger button hide-medium hide-large right padding-large hover-blue large white" href="javascript:void(0);" onclick="dropMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="bar-item button padding-large hover-white">Home</a>
+      <a href="people.html" class="bar-item button hide-small padding-large hover-white">People</a>
+      <a href="projects.html" class="bar-item button hide-small padding-large hover-white">Projects</a>
+
+    </div>
+
+  <!-- modified by Kazuto -->
+  <!-- dropdown menu toggled by burger button on small screens -->
+    <div class='left'>
+      <div id="SmallNavBar" class="bar-block light-grey hide hide-large hide-medium large">
+        <a href="people.html" class="show burger-item padding-large">People</a>
+        <a href="projects.html" class="show burger-item padding-large">Projects</a>
+      </div>
+    </div>
+    <!-- end of Kazuto edit-->
+  </div>
+  <!-- End of Owner: Kate -->
+
+  <!-- Owner: Kazuto -->
+  <!-- Title image and accompanying text -->
+  <header class="container center padding-62-16">
+    <img class="image" src="images/Cloud9Consulting4.jpg" alt="Cloud 9 Consulting" width="1500" height="523">
+    <div class="display-middle">
+      <h1 class="headertext margin">What We Do</h1>
+      <p class="hide-medium hide-small center xlarge">Our Services</p>
+    </div>
+  </header>
+  <!-- End of Owner: Kazuto -->
+
+  <!-- owner: Kazuto -->
+  <!-- modified by Mark Dec 4, 2020 -->
+  <!-- inspiration from http://tresreistech.com/gis-consulting-and-services/ -->
+  <!-- following code displays 6 icons in Services menu that are anchor links to the corresponding project description. Displayed 3 across x 2 down for large screens -->
+  <div class='content-large center hide-small'>
+    <h2>Services</h2>
+    <div class='flex'>
+      <div class='thirdWidth'>Spatial Analysis</div>
+      <div class='thirdWidth'>Geovisualization</div>
+      <div class='thirdWidth'>Database Modeling</div>
+    </div>
+
+    <div class='flex padding-bottom'>
+      <a href='#spatial' class='thirdWidth '>
+        <img src='images/icons_spatial125.png' alt='vector map icon' width='125' height='103'> <!-- source: open source from canva.com (creator: gstudioimagen) -->
+      </a>
+      <a href='#geovis' class='thirdWidth '>
+        <img src='images/icons_geovis125.png' alt='map icon' width='125' height='100'> <!-- source: open source from canva.com (creator: sketchify) -->   
+      </a>
+      <a href='#database' class='thirdWidth '> 
+        <img src='images/icons_database125.png' alt='database icons' width='125' height='100'> <!-- source: open source from canva.com (creator: Aimagenarium) -->
+      </a> 
+    </div>
+
+    <div class='flex'>
+      <div class='thirdWidth'>Remote Sensing</div>
+      <div class='thirdWidth'>Surveying</div>
+      <div class='thirdWidth'>Web Design</div>
+    </div>
+
+    <div class='flex padding-bottom'>
+      <a href='#remote' class = 'thirdWidth'>
+        <img src='images/icons_remote125.png' alt='satellite icon' width='125' height='119'> <!-- source: open source from canva.com (creator: oleksiiafanasiev) -->
+      </a>
+      <a href='#survey' class='thirdWidth'>
+        <img src='images/icons_survey125.png' alt='surveyor with total station icon' width='125' height='126'> <!-- source: open source from canva.com (creator: juicyfish) -->
+      </a>
+      <a href='#webdesign' class='thirdWidth'>
+        <img src='images/icons_webdesign125.png' alt='computer icon' width='125' height='110'> <!-- source: open source from canva.com (creator: grmarc) -->       
+      </a>
+    </div>
+  </div>
+  <!-- end Kazuto ownership -->
+  <!-- end menu large screen -->
+
+  <!-- Owner Mark December 5 -->
+  <!-- Services menu on small screen -->
+  <!-- Displayed 2 across x 3 down for small screens -->
+  <div class='content-large center hide-large hide-medium'>
+    <div class='flex hide-large hide-medium'>
+      <div class='halfWidth'>Spatial Analysis</div>
+      <div class='halfWidth'>Geovisualization</div>
+    </div>
+
+    <div class='flex hide-large hide-medium'>
+      <a href='#spatial' class='halfWidth '>
+        <img src='images/icons_spatial125.png' alt='vector map icon' width='125' height='103'>  <!-- source: open source from canva.com (creator: gstudioimagen) -->
+      </a>
+      <a href='#geovis' class='halfWidth '>
+        <img src='images/icons_geovis125.png' alt='map icon' width='125' height='100'> <!-- source: open source from canva.com (creator: sketchify) -->    
+      </a>
+    </div>
+
+    <div class='flex hide-large hide-medium'>
+      <div class='halfWidth'>Database Modeling</div>
+      <div class='halfWidth'>Remote Sensing</div>
+    </div>
+
+    <div class='flex hide-large hide-medium'>
+      <a href='#database' class='halfWidth '> 
+        <img src='images/icons_database125.png' alt='three databases icon' width='125' height='100'> <!-- source: open source from canva.com (creator: Aimagenarium) -->
+      </a> 
+      <a href='#remote' class = 'halfWidth '>
+        <img src='images/icons_remote125.png' alt='satellite icon' width='125' height='119'> <!-- source: open source from canva.com (creator: oleksiiafanasiev) -->
+      </a>
+    </div> 
+
+    <div class='flex hide-large hide-medium'>
+      <div class='halfWidth'>Surveying</div>
+      <div class='halfWidth'> Web Design</div>
+    </div>
+
+    <div class='flex hide-large hide-medium'>
+      <a href='#survey' class='halfWidth '>
+        <img src='images/icons_survey125.png' alt='surveyor with total station icon' width='125' height='126'> <!-- source: open source from canva.com (creator: juicyfish) -->
+      </a>
+      <a href='#webdesign' class='halfWidth '>
+        <img src='images/icons_webdesign125.png' alt='computer icon' width='125' height='110'> <!-- source: open source from canva.com (creator: grmarc) -->        
+      </a>
+    </div>
+  </div>
+  <!-- end menu small screen -->
+  <!-- end Mark -->
+
+  <!-- beginning of project descriptions; 6 in total, each with a title and accompanying paragraph-->
+
+  <!-- Owner: Kate -->
+  <!-- creates container to contain title, paragraph, list and image -->
+  <!-- Spatial Analysis Section -->
+  <div class="light-grey container" id='spatial'>
+    <div class="content-large">
+      <div class="padding-bottom">
+        <h1 class='anchor'>Spatial Analysis</h1>
+        <p>Our spatial analysis division can conduct risk assessment and site suitability analyses for all of your environmental and
+          municipal needs. Examples of our past projects include: 
+        </p>
+        <ul>
+          <li>Watermain Break Risk Analyses</li>
+          <li>Flood Plain Analyses</li>
+          <li>Building Suitability Studies</li>
+          <li>Environmental Risk Analyses</li>            
+        </ul>
+        <p>Our team can sort through your topographic maps, aerial imagery, and tabular data to produce meaningful spatial
+          analyses based on your specifications. Please contact us for more information on how we can help.</p>
+        <div class="padding-large">
+          <img src="images/spatial_400_234.jpg" alt="Spatial Analysis" width="400" height="234" class="responsive project-image">
+          <p>Spatial Analysis using Raster Data</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of Owner: Kate -->
+
+  <!-- Owner Mark -->
+  <!-- creates container to contain title, paragraph, list and image -->
+  <!-- Geovisualization Section -->
+  <div class="container" id='geovis'>
+    <div class="content-large">
+      <div class="padding-bottom">
+        <h1 class='anchor'>Geovisualization</h1>
+        <p>Our cartography specialists can prepare a variety of reference or thematic maps for reporting, 
+          presentations, or displays. We can adapt our maps to suit digital or physical presentation media and
+           are able to generalize your data to suit small format for printouts or pamphlets. Talk to us about 
+           your cartographic needs, and we will find a way to present your data clearly and attractively.
+          We can produce:</p>
+        <!-- End of Owner: Mark -->
+        <!-- Owner: Kate-->
+        <ul>
+          <li>Large Format Maps</li>
+          <li>Small Format Maps</li>
+          <li>General Reference Maps</li>
+          <li>Thematic Maps</li>
+          <li>Special Purpose Maps</li>
+        </ul>
+        <p>Contact our cartography division for more information on how we can help.</p>
+        <div class="padding-large">
+          <img src="images/cartography_400_237.jpg" alt="Cartography" width="400" height="237" class="responsive project-image">
+          <p>Generalization for Small Format Maps</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Owner: Kate-->
+
+  <!-- Owner: Mark -->
+  <!-- creates container to contain title, paragraph, list and image -->
+  <!-- Database Modeling -->
+  <div class="light-grey container" id='database'>
+    <div class="content-large">
+      <div class="padding-bottom">
+        <h1 class='anchor'>Database Modeling</h1>
+        <p>Our team is skilled in database design, creating functional and efficient databases geared
+           towards your specific needs. Consult with us about your data storage requirements, and we will 
+           design a model that will both suit your current needs and plan for your future needs as well. Our database services can 
+           be applied to:</p>
+           <!-- End of Owner: Mark -->
+           <!-- Owner: Kate -->
+           <ul>
+             <li>Spatial Datasets</li>
+             <li>Data Analytics</li>
+             <li>Human Resources</li>
+           </ul>
+        <p>Contact us today for a free quote.</p>
+        <div class="padding-large">
+          <img src="images/databasedesign_400_207.jpg" alt="Geodatabase Design" width="400" height="207" class="responsive project-image">
+          <p>Geodatabase Design</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Owner: Kate -->
+
+  <!-- Owner: Kazuto -->
+  <!-- creates container to contain title, paragraph, list and image -->
+  <!-- Remote Sensing Section -->
+  <div class="container" id='remote'>
+    <div class="content-large">
+      <div class="padding-bottom">
+        <h1 class='anchor'>Remote Sensing</h1>
+        <p>Remote sensing is a powerful tool for all aspects of GIS. We have experience working with all manner of aerial 
+          and satellite imagery. Our expertise includes working with:</p>
+          <ul>
+            <li>Spectral Index Interpretation</li>
+            <li>Geometric Correction and Orthorectification</li>
+            <li>Photogrammetry</li>
+            <li>Multispectral Image Classification (Supervised and Unsupervised)</li>
+            <li>Image Enhancement</li>
+          </ul>
+          <!-- End of Owner: Kazuto -->
+        <!-- Owner: Kate -->
+        <p>Let our team of experts handle the tedious tasks of Ground Control Point selection and Training Site Classification for you
+          so that you can focus on what is most important to your business. Contact us today for a free quote.</p>
+        <div class="padding-large">
+          <img src="images/RemoteSensing.jpg" alt="Geometric Correction" width="400" height="321" class="responsive project-image">
+          <p>Geometric Correction using 2nd Order Polynomials</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Owner: Kate -->
+
+  <!-- Owner: Kazuto -->
+  <!-- creates container to contain title, paragraph, list and image -->
+  <!-- Surveying Section -->
+  <div class="light-grey container" id='survey'>
+    <div class="content-large">
+      <div class="padding-bottom">
+        <h1 class='anchor'>Surveying</h1>
+        <p>
+          Our veteran surveying crew has years of experience under their belts and will brave the elements to carry out
+          your surveying projects. Our dedicated AutoCAD department will create top quality survey plans from field data.
+        </p>
+        <ul>
+          <li>A team of hardened field surveyors who work effectively outdoors in any and all weather conditions</li>
+          <li>Conduct cadastral surveys</li>
+          <li>Creation of survey plans on AutoCAD from survey measurements</li>
+        </ul>
+        <p>Our team is skilled in working in AutoCAD to map your survey data clearly and accurately. If need be, our 
+          team is happy to truck the total stations and rods out to the field to conduct cadastral surveys as well.
+        We love to get out of the office!</p>
+        <!-- End of Owner: Kazuto -->
+        <!-- Owner: Kate -->
+        <div class="padding-large">
+          <img src="images/surveyplan_400_252.jpg" alt="Survey Plan" width="400" height="252" class="responsive project-image">
+          <p>Site Survey Plan Created in AutoCad Map</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Owner: Kate -->
+
+  <!-- Owner: Kazuto -->
+  <!-- creates container to contain title, paragraph, list -->
+  <!-- Web Design Section -->
+  <div class="container" id='webdesign'>
+    <div class="content-large">
+      <div class="padding-bottom">
+        <h1 class='anchor'>Web Design</h1>
+        <p>
+          We design modern, intuitive websites that will be sure to make a great first impression on potential clients.
+          Choose from a list of website templates and we will do the rest. Our designers can create a tailor-made website
+          that fits your specifications and company's needs. If you decide to design your website with us, we will also offer
+          a special price to host your website on our platform. So don't let an old, outdated website drag your company image down.
+          Contact the Cloud 9 Web Design team today to get started building your dream website.
+        </p>
+          <ul>
+            <li>Modern, attractive website design that is even more impressive than this one</li>
+            <li>Responsive websites for desktop and mobile environments</li>
+            <li>We even dabble in JavaScript (impressive eh?)</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End Kazuto ownership -->
+
+  <!-- text at bottom stating company name -->
+  <div class="container light-grey center">
+      <p class="margin center">Cloud 9 Consulting</p>
+  </div>
+
+  <!-- Container with footer -->
+  <footer class="container center">  
+    <div class="anchor"></div>
+    <p class="center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+</body>
+</html>
+<!-- End of Owner Kazuto -->
